@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rzd-aX-AvZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14109"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LDCalenderViewController-->
+        <scene sceneID="qG7-2R-PDW">
+            <objects>
+                <tableViewController id="rr5-5R-jF4" userLabel="CalenderViewController" customClass="CalenderViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CalenderViewController" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" sectionHeaderHeight="22" sectionFooterHeight="22" id="Gs5-39-3pu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CalendarCell" editingAccessoryType="disclosureIndicator" rowHeight="125" id="gZU-TL-Mtm" customClass="CalendarCell">
+                                <rect key="frame" x="0.0" y="22" width="375" height="125"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gZU-TL-Mtm" id="q84-Ln-rQT">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="124.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单总价格" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mst-PE-I7x">
+                                            <rect key="frame" x="15" y="100" width="319" height="27"/>
+                                            <color key="backgroundColor" red="1" green="0.83073807479999995" blue="0.66810939449999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="27" id="Ruk-SZ-0Pw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="尚未选择日期" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xh-b0-sjz">
+                                            <rect key="frame" x="6" y="0.0" width="328" height="95"/>
+                                            <color key="backgroundColor" red="1" green="0.83073807476316819" blue="0.66810939447960238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="95" id="mMV-rt-aKC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="3Xh-b0-sjz" secondAttribute="bottom" constant="20" id="Lvb-PQ-uGV"/>
+                                        <constraint firstItem="mst-PE-I7x" firstAttribute="leading" secondItem="q84-Ln-rQT" secondAttribute="leadingMargin" constant="-1" id="Ydr-6F-3zA"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="3Xh-b0-sjz" secondAttribute="bottom" constant="-8.5" id="aHu-7V-WQC"/>
+                                        <constraint firstItem="3Xh-b0-sjz" firstAttribute="leading" secondItem="q84-Ln-rQT" secondAttribute="leadingMargin" id="cXd-du-8F7"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="mst-PE-I7x" secondAttribute="trailing" constant="-1" id="qcH-0F-Q9O"/>
+                                        <constraint firstItem="3Xh-b0-sjz" firstAttribute="top" secondItem="q84-Ln-rQT" secondAttribute="topMargin" constant="-8" id="qgL-Xh-c1V"/>
+                                        <constraint firstItem="mst-PE-I7x" firstAttribute="top" secondItem="q84-Ln-rQT" secondAttribute="topMargin" constant="89" id="r08-j2-ZFg"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="3Xh-b0-sjz" secondAttribute="trailing" id="vuX-9J-AMJ"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Lvb-PQ-uGV"/>
+                                            <exclude reference="aHu-7V-WQC"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rr5-5R-jF4" id="SI5-gz-CWn"/>
+                            <outlet property="delegate" destination="rr5-5R-jF4" id="dO0-yk-xh1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="CalendarView" id="GjW-nu-xG1"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iWd-Kr-atT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-716" y="-347"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tIA-ND-QTF">
+            <objects>
+                <navigationController id="rzd-aX-AvZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ypy-Wh-dM1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rr5-5R-jF4" kind="relationship" relationship="rootViewController" id="g1P-AM-eqi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86w-xi-qj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1399" y="-347"/>
+        </scene>
+    </scenes>
+</document>
