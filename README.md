@@ -1,7 +1,7 @@
 # CalendarView
-! [这里随便填写 ] (https://github.com/zezezea/CalendarView/blob/master/img.png)；
 
 ![预览图](https://github.com/zezezea/CalendarView/blob/master/img.png)
+
 一个轻量级开源日历控件
 1.支持单/多选日期
 2.多选日期排序
