@@ -1,5 +1,5 @@
 # CalendarView
-! [这里随便填写 ] ( CalendarView/img.png )；
+! [这里随便填写 ] (https://github.com/zezezea/CalendarView/blob/master/img.png)；
 
 
 一个轻量级开源日历控件
